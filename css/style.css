@@ -1,0 +1,97 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.place-card {
+  position: relative;
+  display: block;
+  padding-bottom: 20px;
+  margin-bottom: 16px;
+  text-decoration: none;
+  color: #1d1d1d;
+  min-height: 369px;
+}
+
+.place-card:hover {
+  background-color: rgba(117, 117, 117, 0.14);
+
+}
+
+.place-card__image {
+  margin-bottom: 16px;
+}
+
+.place-card__image img {
+  display: block;
+  width: 100%;
+}
+
+.place-card__title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.place-card__kitchen {
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #626262;
+ }
+.place-card__about{
+  display: flex;
+  font-size: 13px;
+  line-height: 21px; 
+  margin-right: 4px;
+  }
+.place-card__sale{ 
+position: absolute; 
+left: 75px;
+top: 10px;
+padding: 6px 10px;
+width: 250px;
+font-weight: 100;
+font-size: 14px;
+line-height: 16px;
+color: #FFFFFF;
+background: #734BDA;
+}
+
+.star{  
+  margin: 0 4px;
+  margin-top: 1.5px;
+}
+
+
+.place-card__duration {
+  min-width: 75.53px;
+  margin-right: 14.9px;
+}
+
+.place-card__button{
+  position: absolute;
+  background: url(../images/heart.svg);
+  top: 230px;
+  left: 285px;
+  height: 20px;
+  width: 22px;
+  border: none;
+}
+
+/* .place-card__about:first-child {
+margin-right: 14.9px;
+} */
