@@ -23,14 +23,13 @@ img {
   text-decoration: none;
   color: #1d1d1d;
   min-height: 369px;
-  transition:background-color 0.5s ease;
+  transition: background-color 0.5s ease;
 }
 
 .place-card:hover {
-  background-color: rgba(117, 117, 117, 0.14);  
-  transition:background-color 0.5s ease;
+  background-color: rgba(117, 117, 117, 0.14);
+  transition: background-color 0.5s ease;
 }
-
 
 .place-card__image {
   margin-bottom: 16px;
@@ -53,38 +52,39 @@ img {
   font-size: 14px;
   line-height: 21px;
   color: #626262;
- }
-.place-card__about{
-  display: flex;
-  font-size: 13px;
-  line-height: 21px; 
-  margin-right: 4px;
-  }
-.place-card__sale{ 
-position: absolute; 
-left: 75px;
-top: 10px;
-padding: 6px 10px;
-width: 250px;
-font-weight: 100;
-font-size: 14px;
-line-height: 16px;
-color: #FFFFFF;
-background: #734BDA;
 }
 
-.star{  
+.place-card__about {
+  display: flex;
+  font-size: 13px;
+  line-height: 21px;
+  margin-right: 4px;
+}
+
+.place-card__sale {
+  position: absolute;
+  left: 75px;
+  top: 10px;
+  padding: 6px 10px;
+  width: 250px;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  background: #734BDA;
+}
+
+.star {
   margin: 0 4px;
   margin-top: 1.5px;
 }
 
-
 .place-card__duration {
   min-width: 75.53px;
-  margin-right: 14.9px;
+  /* margin-right: 14.9px; */
 }
 
-.place-card__button{
+.place-card__button {
   position: absolute;
   background: url(../images/heart.svg);
   top: 230px;
@@ -94,9 +94,10 @@ background: #734BDA;
   border: none;
 }
 
-/* .place-card__about:first-child {
-margin-right: 14.9px;
-} */
-.disabled{
+.place-card__about > div:first-child {
+  margin-right: 14.9px;
+}
+
+.disabled {
   display: none;
 }
