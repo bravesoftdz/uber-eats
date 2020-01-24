@@ -23,12 +23,14 @@ img {
   text-decoration: none;
   color: #1d1d1d;
   min-height: 369px;
+  transition:background-color 0.5s ease;
 }
 
 .place-card:hover {
-  background-color: rgba(117, 117, 117, 0.14);
-
+  background-color: rgba(117, 117, 117, 0.14);  
+  transition:background-color 0.5s ease;
 }
+
 
 .place-card__image {
   margin-bottom: 16px;
@@ -95,3 +97,6 @@ background: #734BDA;
 /* .place-card__about:first-child {
 margin-right: 14.9px;
 } */
+.disabled{
+  display: none;
+}
