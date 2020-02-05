@@ -9,21 +9,93 @@
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="-1" />
   <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" /> -->
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/grid.css" />
+  <!-- <link rel="stylesheet" href="./css/grid.css" /> -->
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-  <header></header>
+  <header class="shadow-sm">
+    <div class="container">
+      <div class="row pb-3 pt-3 ">
+        <div class=" col-5 col-sm-7 col-md-3 col-lg-3 col-xl-3 d-none d-sm-block">
+          <img src="./images/logo.svg" alt="logo Uber Eats">
+        </div>
+        <div class="col-md-5 col-lg-6 d-none d-md-block">
+          <form class="row form-inline">
+            <button class=" btn btn-sm btn-light border mr-2" type="button" id="buttonWhenMd">ASAP</button>
+            <label for="buttonLocationMd">to</label>
+            <div class="input-group input-group-sm ml-3">
+              <div class="input-group-prepend">
+                <button type="button" id="buttonLocationMd" class="btn btn-light text-hide gps">GPS</button>
+              </div>
+              <input type="text" id="inputAdressMd" class="form-control ml-n5 pl-5" value="ul. Bolshaya Dmitrovka,22">
+            </div>
+          </form>
+        </div>
+        <div class="col-12 col-sm-5 col-md-4 col-lg-3">
+          <div class="row">
+            <button type="button" class="col btn btn-light btn-sm border">Sign-In</button>
+            <button type="button" class="col btn btn-dark btn-sm">Register</button>
+            <button type="button" class="col btn btn-light btn-sm text-hide basket">Basket</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+      <form action="" class="row mb-2 mt-2 border-bottom">
+        <div class="input-group  ml-3 ">
+          <div class="input-group-prepend">
+            <button type="button" class="btn btn-light text-hide search"></i>">Search</button>
+          </div>
+          <input type="search" class="form-control ml-n2 pl-3 border-0" placeholder="Search for restaurant or cuisine">
+        </div>
+      </form>
+      <form action="">
+        <div class="d-md-none row mb-2 mt-2 ">
+          <div class="col-5">
+            <label for="buttonWhenSm" class="col-form-label col-form-label-sm">When</label>
+            <div class="input-group">
+              <button class=" btn btn-light border" type="button" id="buttonWhenSm">ASAP</button>
+            </div>
+          </div>
+          <div class="col-7">
+            <label for="buttonLocationSm" class="col-form-label col-form-label-sm">To</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button type="button" id="buttonLocationSm" class="btn btn-light text-hide gps mr-n4">GPS</button>
+              </div>
+              <input type="text" id="inputAdressMd" class="form-control pl-4" value="ul. Bolshaya Dmitrovka,22">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </nav>
   <main>
     <div class="container">
       <div class="row">
-        <div class="col-4">
+        <div class="col-12">
+          <h3>
+            Restaurants
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
           <a href="#" class="place-card">
             <div class="place-card__image">
               <img src="./images/card1.svg" alt="Макдоналдс — Газетный" />
+              <button class="button place-card__button disabled">
+              </button>
+              <div class="place-card__sale disabled">
+                Потратьте 300 ₴, сэкономьте 70 ₴
+              </div>
             </div>
             <h3 class="place-card__title">Макдоналдс — Газетный</h3>
             <div class="place-card__kitchen">₴₴ • Бургеры</div>
@@ -36,16 +108,17 @@
             <div class="place-card__sale disabled">
               Потратьте 300 ₴, сэкономьте 70 ₴
             </div>
-            <button class="place-card__button disabled">
-            </button>
-            <!-- <button class="place-card__button">
-            </button> -->
           </a>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
           <a href="#" class="place-card">
             <div class="place-card__image">
               <img src="./images/card2.svg" alt="DimSum & Co — ЦДМ" />
+              <button class="button place-card__button">
+                <div class="place-card__sale disabled">
+                  Потратьте 300 ₴, сэкономьте 70 ₴
+                </div>
+              </button>
             </div>
             <h3 class="place-card__title">DimSum & Co — ЦДМ</h3>
             <div class="place-card__kitchen">₴ • Японская • Китайская • Азиатская</div>
@@ -55,17 +128,18 @@
               <div class="star"><img src="./images/Star.svg" alt="stars"></div>
               <div class="place-card__votes">(200+)</div>
             </div>
-            <div class="place-card__sale disabled">
-              Потратьте 300 ₴, сэкономьте 70 ₴
-            </div>
-            <button class="place-card__button">
-            </button>
           </a>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
           <a href="#" class="place-card">
             <div class="place-card__image">
               <img src="./images/card3.svg" alt="ДвижОК — Манежная" />
+              <button class="button place-card__button">
+
+              </button>
+              <div class="place-card__sale ">
+                Потратьте 300 ₴, сэкономьте 70 ₴
+              </div>
             </div>
             <h3 class="place-card__title">ДвижОК — Манежная</h3>
             <div class="place-card__kitchen">₴ • Американская • Европейская</div>
@@ -75,17 +149,17 @@
               <div class="star"><img src="./images/Star.svg" alt="stars"></div>
               <div class="place-card__votes">(200+)</div>
             </div>
-            <div class="place-card__sale">
-              Потратьте 300 ₴, сэкономьте 70 ₴
-            </div>
-            <button class="place-card__button">
-            </button>
           </a>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
           <a href="#" class="place-card">
             <div class="place-card__image">
               <img src="./images/card4.svg" alt="НЯ — NHA" />
+              <button class="button place-card__button">
+              </button>
+              <div class="place-card__sale disabled">
+                Потратьте 300 ₴, сэкономьте 70 ₴
+              </div>
             </div>
             <h3 class="place-card__title">НЯ — NHA</h3>
             <div class="place-card__kitchen">₴₴ • Вьетнамская</div>
@@ -95,18 +169,36 @@
               <div class="star"><img src="./images/Star.svg" alt="stars"></div>
               <div class="place-card__votes">(200+)</div>
             </div>
-            <div class="place-card__sale disabled">
-              Потратьте 300 ₴, сэкономьте 70 ₴
-            </div>
-            <button class="place-card__button">
-            </button>
           </a>
         </div>
       </div>
     </div>
   </main>
-  <footer>
+  <footer class="bg-dark">
+    <div class="container">
+      <div class="row p-3 pt-5 pb-4 border-bottom">
+        <img src="./images/footerLogo.svg" alt="logo Uber Eats">
+      </div>
+      <div class="row pt-5 pb-4 border-bottom">
+        <div class="col-4">
+          <div class="input-group border">
+            <div class="input-group-prepend">
+              <img src="./images/world.svg" alt="">
+            </div>
+            <input list="Languages" id="inputLang" class="form-control bg-dark text-light border-0" value="ENGLISH">
+            <datalist id="Languages">
+              <option selected value="ENGLISH"></option>
+            </datalist>
+          </div>
+          <h5 class="text-light pt-4 pb-4"> <a href="#" class="text-warning">#</a> UberEats</h5>
+      
+        </div>
+      </div>
+
+    </div>
+    </div>
   </footer>
+
 </body>
 
 </html>
