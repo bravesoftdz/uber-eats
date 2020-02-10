@@ -26,6 +26,31 @@ body {
   background: center no-repeat url(../images/world.svg);
 }
 
+.Facebook {
+  background: center no-repeat url(../images/facebook.svg);
+  height: 25px;
+}
+
+.Instagram {
+  background: center no-repeat url(../images/instagram.svg);
+  height: 25px;
+}
+
+.Twitter {
+  background: center no-repeat url(../images/twitter.svg);
+  height: 25px;
+}
+
+.play-market {
+  background: top / contain no-repeat url(../images/en_badge_web_generic-cf6dad406f.svg);
+  height: 43px;
+}
+
+.app-store {
+  background: top / contain no-repeat url(../images/Download_on_the_App_Store_Badge_US-UK_RGB_blk.svg);
+  height: 43px;
+}
+
 .place-card {
   display: block;
   padding-bottom: 20px;
@@ -88,8 +113,7 @@ body {
 }
 
 .star {
-  margin: 0 4px;
-  margin-top: 1.5px;
+  margin: 0px 4px 2px 4px;
 }
 
 .place-card__duration {
@@ -113,4 +137,21 @@ body {
 
 .disabled {
   display: none;
+}
+
+.foter__bottom-link {
+  font-size: 11px;
+}
+
+.foter__middle-link {
+  font-size: 13px;
+}
+
+.button-up {
+  background: center / contain no-repeat url(../images/btn-up.svg);
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  right: 16px;
+  bottom: 24px;
 }

@@ -19,45 +19,45 @@
 
 <body>
   <header class="shadow-sm">
-    <div class="container">
+    <div class="container-lg">
       <div class="row pb-3 pt-3 ">
-        <div class=" col-5 col-sm-7 col-md-3 col-lg-3 col-xl-3 d-none d-sm-block">
+        <div class=" col-5 col-sm-3">
           <img src="./images/logo.svg" alt="logo Uber Eats">
         </div>
-        <div class="col-md-5 col-lg-6 d-none d-md-block">
+        <div class="col-sm-5 d-none d-sm-block">
           <form class="row form-inline">
-            <button class=" btn btn-sm btn-light border mr-2" type="button" id="buttonWhenMd">ASAP</button>
-            <label for="buttonLocationMd">to</label>
-            <div class="input-group input-group-sm ml-3">
+            <button class=" btn btn-light border mr-2" type="button" id="buttonWhenMd">ASAP</button>
+            <label for="buttonLocationMd" class="mr-2">to</label>
+            <div class="input-group">
               <div class="input-group-prepend">
-                <button type="button" id="buttonLocationMd" class="btn btn-light text-hide gps">GPS</button>
+                <button type="button" id="buttonLocationMd" class="mr-n4 btn btn-light text-hide gps">GPS</button>
               </div>
-              <input type="text" id="inputAdressMd" class="form-control ml-n5 pl-5" value="ul. Bolshaya Dmitrovka,22">
+              <input type="text" id="inputAdressMd" class="form-control pl-4" value="ul. Bolshaya Dmitrovka,22">
             </div>
           </form>
         </div>
-        <div class="col-12 col-sm-5 col-md-4 col-lg-3">
+        <div class="col-7 col-sm-4">
           <div class="row">
-            <button type="button" class="col btn btn-light btn-sm border">Sign-In</button>
-            <button type="button" class="col btn btn-dark btn-sm">Register</button>
-            <button type="button" class="col btn btn-light btn-sm text-hide basket">Basket</button>
+            <button type="button" class="col-5 mr-1 col-sm-4 btn btn-light btn-sm border">Sign-In</button>
+            <button type="button" class="col-5 mr-1 col-sm-4 btn btn-dark btn-sm">Register</button>
+            <button type="button" class="col-2  btn btn-light btn-sm text-hide basket d-none d-sm-block">Basket</button>
           </div>
         </div>
       </div>
     </div>
   </header>
   <nav>
-    <div class="container">
+    <div class="container-lg">
       <form action="" class="row mb-2 mt-2 border-bottom">
         <div class="input-group  ml-3 ">
           <div class="input-group-prepend">
-            <button type="button" class="btn btn-light text-hide search"></i>">Search</button>
+            <button type="button" class="btn btn-light text-hide search mr-n2"></i>">Search</button>
           </div>
-          <input type="search" class="form-control ml-n2 pl-3 border-0" placeholder="Search for restaurant or cuisine">
+          <input type="search" class="form-control ml-n2 pl-4 border-0" placeholder="Search for restaurant or cuisine">
         </div>
       </form>
       <form action="">
-        <div class="d-md-none row mb-2 mt-2 ">
+        <div class="d-sm-none row mb-2 mt-2 ">
           <div class="col-5">
             <label for="buttonWhenSm" class="col-form-label col-form-label-sm">When</label>
             <div class="input-group">
@@ -70,7 +70,7 @@
               <div class="input-group-prepend">
                 <button type="button" id="buttonLocationSm" class="btn btn-light text-hide gps mr-n4">GPS</button>
               </div>
-              <input type="text" id="inputAdressMd" class="form-control pl-4" value="ul. Bolshaya Dmitrovka,22">
+              <input type="text" id="inputAdressSm" class="form-control pl-4" value="ul. Bolshaya Dmitrovka,22">
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@
     </div>
   </nav>
   <main>
-    <div class="container">
+    <div class="container-lg">
       <div class="row">
         <div class="col-12">
           <h3>
@@ -87,7 +87,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="col-12 col-sm-6 col-lg-4">
           <a href="#" class="place-card">
             <div class="place-card__image">
               <img src="./images/card1.svg" alt="Макдоналдс — Газетный" />
@@ -101,41 +101,41 @@
             <div class="place-card__kitchen">₴₴ • Бургеры</div>
             <div class="place-card__about">
               <div class="place-card__duration">25 - 35 Мин.</div>
-              <div class="place-card__stars disabled"></div>
-              <div class="star disabled"><img src="./images/Star.svg" alt="stars"></div>
-              <div class="place-card__votes disabled"></div>
-            </div>
-            <div class="place-card__sale disabled">
-              Потратьте 300 ₴, сэкономьте 70 ₴
+              <div class="d-none d-lg-flex disabled">
+                <div class="place-card__stars "></div>
+                <img src="./images/Star.svg" alt="stars" class="star disabled">
+                <div class="place-card__votes"></div>
+              </div>
             </div>
           </a>
         </div>
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="col-12 col-sm-6 col-lg-4">
           <a href="#" class="place-card">
             <div class="place-card__image">
               <img src="./images/card2.svg" alt="DimSum & Co — ЦДМ" />
               <button class="button place-card__button">
-                <div class="place-card__sale disabled">
-                  Потратьте 300 ₴, сэкономьте 70 ₴
-                </div>
               </button>
+              <div class="place-card__sale disabled">
+                Потратьте 300 ₴, сэкономьте 70 ₴
+              </div>
             </div>
             <h3 class="place-card__title">DimSum & Co — ЦДМ</h3>
             <div class="place-card__kitchen">₴ • Японская • Китайская • Азиатская</div>
             <div class="place-card__about">
               <div class="place-card__duration">40 - 50 Мин.</div>
-              <div class="place-card__stars">4.9 </div>
-              <div class="star"><img src="./images/Star.svg" alt="stars"></div>
-              <div class="place-card__votes">(200+)</div>
+              <div class="d-none d-lg-flex disabled">
+                <div class="place-card__stars">4.9 </div>
+                <img src="./images/Star.svg" alt="stars" class="star">
+                <div class="place-card__votes">(200+)</div>
+              </div>
             </div>
           </a>
         </div>
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="col-12 col-sm-6 col-lg-4">
           <a href="#" class="place-card">
             <div class="place-card__image">
               <img src="./images/card3.svg" alt="ДвижОК — Манежная" />
               <button class="button place-card__button">
-
               </button>
               <div class="place-card__sale ">
                 Потратьте 300 ₴, сэкономьте 70 ₴
@@ -145,13 +145,15 @@
             <div class="place-card__kitchen">₴ • Американская • Европейская</div>
             <div class="place-card__about">
               <div class="place-card__duration">35 - 45 Мин.</div>
-              <div class="place-card__stars">4.9 </div>
-              <div class="star"><img src="./images/Star.svg" alt="stars"></div>
-              <div class="place-card__votes">(200+)</div>
+              <div class="d-none d-lg-flex disabled">
+                <div class="place-card__stars">4.9 </div>
+                <img src="./images/Star.svg" alt="stars" class="star">
+                <div class="place-card__votes">(200+)</div>
+              </div>
             </div>
           </a>
         </div>
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="col-12 col-sm-6 col-lg-4">
           <a href="#" class="place-card">
             <div class="place-card__image">
               <img src="./images/card4.svg" alt="НЯ — NHA" />
@@ -165,38 +167,201 @@
             <div class="place-card__kitchen">₴₴ • Вьетнамская</div>
             <div class="place-card__about">
               <div class="place-card__duration">25 - 35 Мин.</div>
-              <div class="place-card__stars">4.9 </div>
-              <div class="star"><img src="./images/Star.svg" alt="stars"></div>
-              <div class="place-card__votes">(200+)</div>
+              <div class="d-none d-lg-flex disabled">
+                <div class="place-card__stars">4.9 </div>
+                <img src="./images/Star.svg" alt="stars" class="star">
+                <div class="place-card__votes">(200+)</div>
+              </div>
             </div>
           </a>
         </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <a href="#" class="place-card">
+            <div class="place-card__image ">
+              <img src="./images/card5.svg" alt="Точка Дзы — Цветной" />
+              <button class="button place-card__button">
+              </button>
+              <div class="place-card__sale disabled">
+                Потратьте 300 ₴, сэкономьте 70 ₴
+              </div>
+            </div>
+            <h3 class="place-card__title">Точка Дзы — Цветной</h3>
+            <div class="place-card__kitchen">₴₴ • Вьетнамская</div>
+            <div class="place-card__about">
+              <div class="place-card__duration">40 - 50 Мин.</div>
+              <div class="d-none d-lg-flex">
+                <div class="place-card__stars">4.9 </div>
+                <img src="./images/Star.svg" alt="stars" class="star">
+                <div class="place-card__votes">(200+)</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <a href="#" class="place-card">
+            <div class="place-card__image ">
+              <img src="./images/card6.svg" alt="Cinnabon" />
+              <button class="button place-card__button">
+              </button>
+              <div class="place-card__sale disabled">
+                Потратьте 300 ₴, сэкономьте 70 ₴
+              </div>
+            </div>
+            <h3 class="place-card__title">Cinnabon</h3>
+            <div class="place-card__kitchen">₴ • Выпечка • Десерты • Капкейки</div>
+            <div class="place-card__about">
+              <div class="place-card__duration">25 - 35 Мин.</div>
+              <div class="d-none d-lg-flex">
+                <div class="place-card__stars">4.9 </div>
+                <img src="./images/Star.svg" alt="stars" class="star">
+                <div class="place-card__votes">(200+)</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <a href="#" class="place-card">
+            <div class="place-card__image ">
+              <img src="./images/card7.svg" alt="PIZZELOVE" />
+              <button class="button place-card__button">
+              </button>
+              <div class="place-card__sale disabled">
+                Потратьте 300 ₴, сэкономьте 70 ₴
+              </div>
+            </div>
+            <h3 class="place-card__title">PIZZELOVE</h3>
+            <div class="place-card__kitchen">₴₴ • Пицца</div>
+            <div class="place-card__about">
+              <div class="place-card__duration">15 - 25 Мин.</div>
+              <div class="d-none d-lg-flex">
+                <div class="place-card__stars">4.9 </div>
+                <img src="./images/Star.svg" alt="stars" class="star">
+                <div class="place-card__votes">(200+)</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <a href="#" class="place-card">
+            <div class="place-card__image ">
+              <img src="./images/card8.svg" alt="Zю кафе — Тверская" />
+              <button class="button place-card__button">
+              </button>
+              <div class="place-card__sale disabled">
+                Потратьте 300 ₴, сэкономьте 70 ₴
+              </div>
+            </div>
+            <h3 class="place-card__title">Zю кафе — Тверская</h3>
+            <div class="place-card__kitchen">₴₴ • Японская</div>
+            <div class="place-card__about">
+              <div class="place-card__duration">25 - 35 Мин.</div>
+              <div class="d-none d-lg-flex">
+                <div class="place-card__stars">4.9 </div>
+                <img src="./images/Star.svg" alt="stars" class="star">
+                <div class="place-card__votes">(200+)</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <a href="#" class="place-card">
+            <div class="place-card__image ">
+              <img src="./images/card9.svg" alt="Bar BQ Cafe — Манежная" />
+              <button class="button place-card__button">
+              </button>
+              <div class="place-card__sale disabled">
+                Потратьте 300 ₴, сэкономьте 70 ₴
+              </div>
+            </div>
+            <h3 class="place-card__title">Bar BQ Cafe — Манежная</h3>
+            <div class="place-card__kitchen">₴₴₴ • Европейская</div>
+            <div class="place-card__about">
+              <div class="place-card__duration">30 - 40 Min.</div>
+              <div class="d-none d-lg-flex">
+                <div class="place-card__stars">4.9 </div>
+                <img src="./images/Star.svg" alt="stars" class="star">
+                <div class="place-card__votes">(200+)</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
       </div>
     </div>
   </main>
   <footer class="bg-dark">
-    <div class="container">
+    <div class="container-lg">
       <div class="row p-3 pt-5 pb-4 border-bottom">
         <img src="./images/footerLogo.svg" alt="logo Uber Eats">
       </div>
       <div class="row pt-5 pb-4 border-bottom">
-        <div class="col-4">
-          <div class="input-group border">
+        <div class="col-12 col-sm-4 mb-4">
+          <div class="input-group col-10 border">
             <div class="input-group-prepend">
               <img src="./images/world.svg" alt="">
             </div>
-            <input list="Languages" id="inputLang" class="form-control bg-dark text-light border-0" value="ENGLISH">
+            <input list="Languages" id="inputLang" class="form-control bg-dark text-light border-0 foter__middle-link" value="ENGLISH">
             <datalist id="Languages">
               <option selected value="ENGLISH"></option>
             </datalist>
           </div>
-          <h5 class="text-light pt-4 pb-4"> <a href="#" class="text-warning">#</a> UberEats</h5>
-      
+          <h5 class="text-light pt-5 pb-4"> <a href="#" class="text-warning">#</a> UberEats</h5>
+          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group">
+              <button type="button" class="mr-2 btn btn-dark text-hide Facebook">Facebook</button>
+              <button type="button" class="mr-2 btn btn-dark text-hide Twitter">Twitter</button>
+              <button type="button" class="mr-2 btn btn-dark text-hide Instagram">Instagram</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4  ">
+          <a class="d-block text-light mb-4 foter__middle-link" href="#">
+            About UberEat
+          </a>
+          <a class="d-block text-light mb-4 foter__middle-link" href="#">
+            Become a Delivery Partner
+          </a>
+          <a class="d-block text-light mb-4 foter__middle-link" href="#">
+            Become a Restaurant Partner</a>
+        </div>
+        <div class="col-12 col-sm-4  ">
+          <a class="d-block text-light mb-4 foter__middle-link" href="#">
+            See all cities
+          </a>
+          <a class="d-block text-light mb-4 foter__middle-link" href="#">
+            Pricing
+          </a>
+          <a class="d-block text-light mb-4 foter__middle-link" href="#">
+            Help
+          </a>
+          <a class="d-block text-light mb-4 foter__middle-link" href="#">
+            FAQs
+          </a>
+        </div>
+
+      </div>
+      <div class="row pt-5 pb-4 border-bottom">
+        <div class="col-sm-3 col-md-4 d-none d-sm-block"></div>
+        <div class="col-12 col-sm-7 col-md-4 row">
+          <button type="button" class="col-5 ml-2 btn btn-dark text-hide app-store">App store</button>
+          <button type="button" class="col-6 ml-2 btn btn-dark text-hide play-market">Play market</button>
+        </div>
+        <div class="col-sm-2 col-md-4 d-none d-sm-block"></div>
+      </div>
+      <div class="row pt-5 pb-4 border-bottom">
+        <div class="col-12 col-sm-4  ">
+          <a class="d-block text-light  foter__bottom-link" href="#">© 2020 Uber Technologies Inc.</a>
+        </div>
+        <div class="col-12 col-sm-4  ">
+          <a class="d-block text-light  foter__bottom-link" href="#"> Privacy</a>
+        </div>
+        <div class="col-12 col-sm-4  ">
+          <a class="d-block text-light  foter__bottom-link" href="#">Terms</a>
         </div>
       </div>
-
     </div>
     </div>
+    <a href="#" class="btn button-up text-hide">Up</a
   </footer>
 
 </body>
